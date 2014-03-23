@@ -2,6 +2,10 @@ body{
 	background: #888888 url('../img/BG.jpg') repeat fixed center;
 }
 
+p{
+	font-family:"微軟正黑體", "Sans", "Arial", "Verdana", "Times New Roman" ;
+}
+
 h1{
 
 }
