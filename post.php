@@ -7,7 +7,13 @@ mysql_select_db($db_sel, $link)
 	or die("DB select faild: " . mysql_error()) ;
 
 if(isset($_SESSION['ID'])){
-	
+?>
+<table>
+<?php
+	$result = mysql_query("SELECT * FROM ")
+?>
+</table>
+<?php
 }
 else{
 ?>
