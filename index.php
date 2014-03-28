@@ -9,7 +9,7 @@
 	$counter = 0;
 	while($row = mysql_fetch_array($result)){
 		$date = date_create($row['date']); 
-		echo "<tr style=\"font-size: 15pt; \"><td width=\"110px\">" . date_format($date, 'Y-m-d') . "</td><td width=\"310px\">{$row['subject']}</td></tr>";
+		echo "<tr style=\"font-size: 15pt; \"><td width=\"110px\">" . date_format($date, 'Y-m-d') . "</td><td width=\"370px\">{$row['subject']}</td></tr>";
 		$counter++;
 		if($counter==4)
 			break;
