@@ -17,6 +17,8 @@ mysql_select_db($db_sel, $link)
 				$result = mysql_query("SELECT `UID` FROM `user` WHERE `username` = '{$_SESSION['ID']}';");
 				$row = mysql_fetch_array($result);
 				$UID = $row['UID'];
+				$_POST['subject'] = mysql_escape_string($_POST['subject']);
+				$_POST['content'] = mysql_escape_string($_POST['content']);
 				$query = "INSERT INTO `announce` (`subject`, `content`, `author`) VALUES ('{$_POST['subject']}', '{$_POST['content']}', '{$UID}');";
 				mysql_query($query);
 				echo "<script>alert('新增成功'); </script>";
