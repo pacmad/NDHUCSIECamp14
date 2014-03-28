@@ -1,6 +1,10 @@
 <?php 
 session_start();
-require_once("conf.php");
+require_once("../conf.php");
+?>
+<link href="../img/icon.gif" rel="icon" type="inage/gif">
+<link href="../css/main.css" rel="stylesheet">
+<?php
 $link = mysql_connect($db_host, $db_id, $db_pw)
 	or die("DB connect failed: " . mysql_error());
 mysql_select_db($db_sel, $link)
