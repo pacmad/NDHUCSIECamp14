@@ -17,3 +17,25 @@ h2{
 h3{
 
 }
+
+a{
+	text-decoration: none
+}
+
+a:link{
+	color: #404040; 
+  }
+
+a:visited{
+	color: #404040; 
+  }
+
+a:active{
+	color: #4F0000;
+  }
+
+a:hover{
+	color: #4F0000;
+  }
+
+
