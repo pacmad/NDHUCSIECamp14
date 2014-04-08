@@ -244,7 +244,7 @@ nav {
 }
 </style>
 </head>
-<body>
+<body style="position: absolute; left: 50%; margin-left: -512px">
 <nav class="nav">
 <ul id="menu">
 	<li><a href="#">營隊介紹</a>
@@ -278,7 +278,7 @@ nav {
 	</li>
 </ul>
 </nav>
-<div style="position:absolute; top: 100px; left: 300px">
+<div style="position:absolute; top: 100px; left: 50%; margin-left: -200px; ">
 <img src="http://<?php echo $host; ?>img/castle_circle.png" width="400px" style="opacity: 0.3">
 </div>
 
