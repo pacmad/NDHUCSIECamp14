@@ -53,7 +53,7 @@ function openAnnounce(id){
 	while($row = mysql_fetch_array($result)){
 		$date = date_create($row['date']);
 		echo "<div id=\"{$row['AID']}\" title=\"{$row['subject']}\">\n";
-		echo "<p>" . $row['text'] . "</p>\n";
+		echo "<p>" . $row['content'] . "</p>\n";
 		echo "</div>\n";
 	}
 
