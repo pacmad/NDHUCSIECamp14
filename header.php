@@ -15,6 +15,14 @@ mysql_select_db($db_sel, $link)
 	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script>
+
+	$(document).ready(function() {
+			$(".toggle").click(function() {
+				$(this).toggleClass("active");
+				$(".nav").slideToggle();
+				});
+			});
+
 		$(function(){
 			$("#announce").dialog({
 				height: 300, 
@@ -185,45 +193,82 @@ mysql_select_db($db_sel, $link)
 					duration: 1000
 				}
 			});
+			<?php
+				$result = mysql_query("SELECT COUNT(*) FROM `team`; ");
+				$row = mysql_fetch_array($result);
+				for($i=1;$i<=$row[0];$i++){
+			?>
+					$('#staff<?php echo $i; ?>').dialog({
+						height: 350, 
+						width: 800, 
+						autoOpen: false, 
+						show: {
+							effect: "explode",
+							duration: 1000	
+						}, 
+						hide: {
+							effect: "explode", 
+							duration: 1000
+						}
+					});
+			<?php
+				}
+			?>
 		});
 
+		function openDia(ID, TID){
+			var tmp = '#' + ID;
+			$('#intro').dialog('close');
+			$('#rules').dialog('close');
+			$('#trans').dialog('close');
+			$('#2013').dialog('close');
+			$('#FAQ').dialog('close');
+			$('#ask').dialog('close');
+			$('#schedule').dialog('close');
+			$('#course').dialog('close');
+			$('#activity').dialog('close');
+			$('#trip').dialog('close');
+			$('#signup').dialog('close');
+			$('#staff').dialog('close');
+			<?php
+				for($i=1;$i<=$row[0];$i++)
+					echo "$('#staff{$i}').dialog('close');\n";
+			?>
+			if(ID=='staff')
+				tmp += TID; 
+			$(tmp).dialog('open');
+		}
 
-		$(document).ready(function() {
-			$(".toggle").click(function() {
-			$(this).toggleClass("active");
-			$(".nav").slideToggle();
-			});
-		});
 </script>
 <style>
 ol{
 	list-style-type: none; 
 }
 nav {
-	display: block;
-	float: left;
-	width: 100%;
-	margin-top: 25px; 
-	margin-bottom: 30px;
-	font-size: 25pt;
+display: block;
+float: left;
+width: 100%;
+	   margin-top: 25px; 
+	   margin-bottom: 30px;
+	   font-size: 25pt;
 }
 .nav ul{
-	margin: 0;
-	padding: 0;
+margin: 0;
+padding: 0;
 }
 .nav li{
-	position: relative;
-	float: left;
-	list-style: none;
-	width: 200px; 
+position: relative;
+float: left;
+	   list-style: none;
+width: 200px; 
 }
 .nav li a {
-	display: block;        
-	padding: 15px 30px;
-	text-decoration: none;
+display: block;        
+padding: 15px 30px;
+		 text-decoration: none;
 }
 .nav li ul {
-	display:none;
+display:none;
 	position: relative;
 	margin-left: 15px; 
 	top:30px;
@@ -249,30 +294,30 @@ nav {
 <ul id="menu">
 	<li><a href="#">營隊介紹</a>
 		<ul id="menu_intro">
-			<li><a href="#" onclick="$('#intro').dialog('open'); ">活動概要</a></li>
-			<li><a href="#" onclick="$('#rules').dialog('open'); ">活動簡章</a></li>
-			<li><a href="#" onclick="$('#trans').dialog('open'); ">交通資訊</a></li>
-			<li><a href="#" onclick="$('#2013').dialog('open'); ">去年回顧</a></li>
-			<li><a href="#" onclick="$('#FAQ').dialog('open'); ">問答時間</a></li>
-			<li><a href="#" onclick="$('#ask').dialog('open'); ">聯絡我們</a></li>	
+			<li><a href="#" onclick="openDia('intro'); ">活動概要</a></li>
+			<li><a href="#" onclick="openDia('rules'); ">活動簡章</a></li>
+			<li><a href="#" onclick="openDia('trans'); ">交通資訊</a></li>
+			<li><a href="#" onclick="openDia('2013'); ">去年回顧</a></li>
+			<li><a href="#" onclick="openDia('FAQ'); ">問答時間</a></li>
+			<li><a href="#" onclick="openDia('ask'); ">聯絡我們</a></li>	
 		</ul>
 	</li>
 	<li><a href="#">活動內容</a>
 		<ul id="menu_info">
-			<li><a href="#" onclick="$('#schedule').dialog('open'); ">行程表</a></li>
-			<li><a href="#" onclick="$('#course').dialog('open'); ">課程介紹</a></li>
-			<li><a href="#" onclick="$('#activity').dialog('open'); ">活動介紹</a></li>
-			<li><a href="#" onclick="$('#trip').dialog('open'); ">出遊介紹</a></li>
+			<li><a href="#" onclick="openDia('schedule'); ">行程表</a></li>
+			<li><a href="#" onclick="openDia('course'); ">課程介紹</a></li>
+			<li><a href="#" onclick="openDia('activity'); ">活動介紹</a></li>
+			<li><a href="#" onclick="openDia('trip'); ">出遊介紹</a></li>
 		</ul>
 	</li>
 	<li style="margin-top: -50px; "><p align="center" style="color:#00184F;"><font style="font-size:15pt;">第五屆</font><br /><font style="font-size:30pt;">東華資工營</font></p></li>
-	<li><a href="#" onclick="$('#signup').dialog('open'); ">我要報名</a></li>
+	<li><a href="#" onclick="openDia('signup'); ">我要報名</a></li>
 	<li><a href="#">工作人員</a>
 		<ul id="menu_staff">
 			<?php
 			$result = mysql_query("SELECT * FROM `team`; ");
 			while($row = mysql_fetch_array($result))
-				echo "<li><a href=\"#\" onclick=\"$('#staff').dialog('open'); \">{$row['name']}</a></li>";
+				echo "<li><a href=\"#\" onclick=\" openDia('staff', {$row['TID']}); \">{$row['name']}</a></li>";
 			?>
 		</ul>
 	</li>
@@ -426,5 +471,19 @@ To Be Announced.
 </div>
 
 <div id="staff" title="工作人員">
-	To be announced. 
+	<?php
+		$result = mysql_query("SELECT * FROM `team`; ");
+		while($row = mysql_fetch_array($result)){
+			$result2 = mysql_query("SELECT * FROM `staff_title`, `staff` WHERE `staff_title`.`TID` = {$row['TID']} AND `staff`.`SID` = `staff_title`.`SID` ORDER BY `priority` DESC; ");
+			echo "<div id=\"staff{$row['TID']}\" title=\"{$row['name']}\">\n";
+			echo "<ol>\n";
+			while($row2 = mysql_fetch_array($result2)){
+				if($row2['TID']!=$row['TID'])	
+					continue;
+				echo "<li><h3>" . $row2['title'] . "</h3></li>\n";
+				echo "<ol><li>" . $row2['name'] . "</li></ol>\n";
+			}
+			echo "</ol></div>\n";
+		}
+	?>
 </div>
