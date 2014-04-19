@@ -294,11 +294,11 @@ display:none;
 <ul id="menu">
 	<li><a href="#">營隊介紹</a>
 		<ul id="menu_intro">
-			<li><a href="#" onclick="openDia('intro'); ">活動概要</a></li>
+		<!--	<li><a href="#" onclick="openDia('intro'); ">活動概要</a></li>-->
 			<li><a href="#" onclick="openDia('rules'); ">活動簡章</a></li>
 			<li><a href="#" onclick="openDia('trans'); ">交通資訊</a></li>
 			<li><a href="#" onclick="openDia('2013'); ">去年回顧</a></li>
-			<li><a href="#" onclick="openDia('FAQ'); ">問答時間</a></li>
+<!--			<li><a href="#" onclick="openDia('FAQ'); ">問答時間</a></li>-->
 			<li><a href="#" onclick="openDia('ask'); ">聯絡我們</a></li>	
 		</ul>
 	</li>
@@ -392,7 +392,7 @@ display:none;
 </div>
 
 <div id="trans" title="交通資訊">
-	交通資訊
+	To be announced. 
 </div>
 
 <div id="2013" title="去年回顧">
@@ -403,7 +403,7 @@ display:none;
 </div>
 
 <div id="FAQ" title="問答時間">
-問答時間
+	To be announced. 
 </div>
 
 <div id="ask" title="聯絡我們">
@@ -442,23 +442,23 @@ To Be Announced.
 <div id="activity" title="活動介紹">
 <ol>
 <li><h3>從前從前……</h3></li>
-<ol><li>（始業式）</li></ol>
+<ol><li>有一群來自全台灣各地的王子、公主來到了矛盾的迪士尼世界。揪竟，他們會展開什麼樣的冒險故事呢？</li></ol>
 <li><h3>For The First Time In Forever</h3></li>
-<ol><li>（相見歡）</li></ol>
+<ol><li>帶著笑容你走向我，作個邀請的動作～初次見面的你我，帶著害羞的臉龐，希冀著什麼呢？</li></ol>
 <li><h3>守護天使</h3></li>
-<ol><li>（小天使與小主人）</li></ol>
+<ol><li>人應愛而偉大，化身小天使、給予你的愛吧！</li></ol>
 <li><h3>跳跳虎的歡樂早晨</h3></li>
-<ol><li>（早操）</li></ol>
+<ol><li>我碰、我跳，我開開心心迎新每天歡愉的早晨！</li></ol>
 <li><h3>料理鼠王的機動任務</h3></li>
-<ol><li>（大地、遊校）</li></ol>
+<ol><li>冒險、闖關：緊張、刺激。究竟是要進行什麼樣的機動任務呢？</li></ol>
 <li><h3>野獸的古堡探險</h3></li>
-<ol><li>（夜教）</li></ol>
+<ol><li>醜陋的野獸，也有善良的一面。但，你想知道那神秘的古堡內有些什麼嗎？勇敢的面對黑暗冒險吧！</li></ol>
 <li><h3>人魚公主的愛與冒險</h3></li>
-<ol><li>（水關）</li></ol>
+<ol><li>炎炎夏日，讓人好想跳入水中清涼一下啊！一跳，咦？這是什麼美麗的世界啊？難道試人魚公主的故鄉嗎？</li></ol>
 <li><h3>迪士尼歡樂慶典</h3></li>
-<ol><li>（晚會）</li></ol>
+<ol><li>歡慶時分到來，讓我們開開心心的慶祝吧！能夠在此相遇，就足以歡慶囉！</li></ol>
 <li><h3>夢想長存、歡樂永遠</h3></li>
-<ol><li>（結業式）</li></ol>
+<ol><li>夢想會場存，歡樂會永遠～歡愉的迪士尼世界生活，就此劃上句號。但帶著夢想，繼續歡樂的成長吧！</li></ol>
 </ol>
 </div>
 
@@ -467,7 +467,52 @@ To Be Announced.
 </div>
 
 <div id="signup" title="我要報名">
-	<a href="doc/5_signup.docx">報名表下載</a>
+<ol>
+	<li><h3>報名表暨家長同意書</a></li>
+	<ul>
+		<li><a href="doc/5_signup.docx">Microsoft Word檔案（.docx）</a></li>
+		<li><a href="doc/5_signup.pdf">PDF檔案（.pdf）</a></li>
+	</ul>
+	<li><h3>報名步驟</h3></li>
+	<ul>
+		<li>網路報名</li>
+		<ol style="list-style-type: decimal; ">
+			<li>填寫<a href="https://docs.google.com/forms/d/1fA9C8c9JaEj7wPU0Vw3uxpy9NxS16b8fgL3w95TzrYI/viewform" target="_blank">線上報名表</a>後下載《報名表暨家長同意書》；亦可不填寫，直接下載《報名表冀家長同意書》。</li>
+			<li>將家長同意書（若無填寫線上報名表，需將報名資料填妥）填寫完畢後，掃瞄或拍照（需能清晰辨識文字）成電子圖檔。</li>
+			<li>將圖檔email至營隊信箱（<a href="mailto:ndhucsiecamp@gmail.com">ndhu.csie.camp@gmail.com</a>）。</li>
+			<li>等待主辦單位回信給您，進入繳費步驟</li>
+		</ol>
+		<li>郵寄報名</li>
+		<ol style="list-style-type: decimal; ">
+			<li>下載《報名表暨家長同意書》。</li>
+			<li>將報名表及同意書填妥後，建議以掛號方式，郵寄至「97401 花蓮縣壽豐鄉志學村16鄰大學路二段1-13號3F 國立東華大學 理工二館 資訊工程學系 東華資工營收」。</li>
+			<li>待主辦單位收到報名資料後，會立即寄email給您，請待主辦單位通知後，進入繳費步驟。
+		</ol>
+	</ul>
+	<li><h3>繳費步驟<h3></li>
+	<ol style="list-style-type: decimal; ">
+		<li>將應繳金額繳至系學會帳戶，資訊如下：</li>
+		<ul>
+			<li>代碼：700（中華郵政）</li>
+			<li>帳號：0091390 0000932</li>
+			<li>戶名：國立東華大學資訊工程學系系學會</li>
+		</ul>
+		<li>將繳費資訊寄至營隊信箱（<a href="mailto:ndhucsiecamp@gmail.com" target="_blank">ndhu.csie.camp@gmail.com</a>），應給資訊如下：</li>
+		<ul>
+			<li>ATM轉帳：轉帳帳號末五碼、轉帳帳號戶名、轉帳金額、轉帳日期及時間（您亦可直接掃描收據寄給我們）</li>
+			<li>臨櫃匯款：匯款人姓名、匯款金額、匯款日期</li>
+			<li>無摺存款：存款日期、存款金額、存款郵局局號（您亦可直接掃描收據寄給我們）</li>
+		</ul>
+		<li>待帳款核對完成後，主辦單位會寄email給您，代表已完成報名及繳費步驟。</li>
+	</ol>
+	<li><h3>退費辦法</h3></li>
+	<ul>
+		<li>因故無法參與者，請Email至官方信箱告訴我們，並附上報名者姓名、聯絡電話、匯款帳號、匯款戶名、匯款方式。</li>
+		<li>2014/6/12前告知者，退已繳之金額並酌收50元手續費。</li>
+		<li>2014/6/12~21期間告知者，退已繳金額之一半。</li>
+		<li>2014/6/21後者，恕不退費。</li>
+	</ul>
+</ol>
 </div>
 
 <div id="staff" title="工作人員">
