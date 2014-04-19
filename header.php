@@ -298,7 +298,7 @@ display:none;
 			<li><a href="#" onclick="openDia('rules'); ">活動簡章</a></li>
 			<li><a href="#" onclick="openDia('trans'); ">交通資訊</a></li>
 			<li><a href="#" onclick="openDia('2013'); ">去年回顧</a></li>
-<!--			<li><a href="#" onclick="openDia('FAQ'); ">問答時間</a></li>-->
+			<li><a href="#" onclick="openDia('FAQ'); ">問答時間</a></li>
 			<li><a href="#" onclick="openDia('ask'); ">聯絡我們</a></li>	
 		</ul>
 	</li>
@@ -403,7 +403,19 @@ display:none;
 </div>
 
 <div id="FAQ" title="問答時間">
-	To be announced. 
+<dl>
+ <dt><h3>Ｑ：哎喲！花蓮實在是好遠啊！車錢實在是好貴啊！支出吃不消啊QAQ</h3></dt>
+   <dd>花蓮的美景、東華的舒適，絕對是值得你來這邊走走的！而且，東華資工營這邊會提供給你們交通補助費，減輕你們的負擔！</dd>
+    <dt><h3>Ｑ：花蓮那麼大，我們要怎麼找到東華大學啊？</h3></dt>
+	  <dd>我們的集合點是在花蓮火車站，到時候會有資工營的工作人員引領大家搭乘接駁車前往東華大學！</dd>
+	   <dt><h3>Ｑ：聽說有泛舟活動欸！可是，會不會太危險了啊？</h3></dt>
+	     <dd>請放心！我們的泛舟活動是由專業人士進行教學，活動進行時也會有專業人員進行安全保護，請放心的享受這平時享受不到的刺激吧！</dd>
+		  <dt><h3>Ｑ：資工營有課程欸！我什麼都不會，這樣會不會吸收不良啊？</h3></dt>
+		    <dd>請放心！我們的課程會從最基本的開始教起，課程中有問題也可以隨時向隊輔、助教請教喔！</dd>
+			 <dt><h3>Ｑ：我還有好多好多問題想問欸！該問誰呢？</h3></dt>
+			   <dd>如果還有任何問題，歡迎隨時寄信至 <a href="mailto:ndhucsiecamp@gmail.com" target="_blank">ndhu.csie.camp@gmail.com </a> 詢問喔！我們收到來信後會盡快回覆的！</dd>
+			   </dl>
+
 </div>
 
 <div id="ask" title="聯絡我們">
