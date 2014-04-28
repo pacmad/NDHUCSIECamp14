@@ -63,7 +63,7 @@ mysql_select_db($db_sel, $link)
 					duration: 1000
 				}
 			});
-			$("#trans").dialog({
+			$("#trans").dialog
 				height: 350, 
 				width: 800, 
 				autoOpen: false, 
@@ -489,7 +489,7 @@ To Be Announced.
 	<ul>
 		<li>網路報名</li>
 		<ol style="list-style-type: decimal; ">
-			<li>填寫<a href="https://docs.google.com/forms/d/1fA9C8c9JaEj7wPU0Vw3uxpy9NxS16b8fgL3w95TzrYI/viewform" target="_blank">線上報名表</a>後下載《報名表暨家長同意書》；亦可不填寫，直接下載《報名表冀家長同意書》。</li>
+			<li>填寫<a href="https://docs.google.com/forms/d/1fA9C8c9JaEj7wPU0Vw3uxpy9NxS16b8fgL3w95TzrYI/viewform" target="_blank">線上報名表</a>後下載《報名表暨家長同意書》；亦可不填寫，直接下載《報名表暨家長同意書》。</li>
 			<li>將家長同意書（若無填寫線上報名表，需將報名資料填妥）填寫完畢後，掃瞄或拍照（需能清晰辨識文字）成電子圖檔。</li>
 			<li>將圖檔email至營隊信箱（<a href="mailto:ndhucsiecamp@gmail.com">ndhu.csie.camp@gmail.com</a>）。</li>
 			<li>等待主辦單位回信給您，進入繳費步驟</li>
