@@ -63,7 +63,7 @@ mysql_select_db($db_sel, $link)
 					duration: 1000
 				}
 			});
-			$("#trans").dialog
+			$("#trans").dialog({
 				height: 350, 
 				width: 800, 
 				autoOpen: false, 
@@ -203,11 +203,11 @@ mysql_select_db($db_sel, $link)
 						width: 800, 
 						autoOpen: false, 
 						show: {
-							effect: "explode",
+							effect: "clip",
 							duration: 1000	
 						}, 
 						hide: {
-							effect: "explode", 
+							effect: "clip", 
 							duration: 1000
 						}
 					});
@@ -440,15 +440,14 @@ display:none;
 </div>
 
 <div id="course" title="課程介紹">
-<!--<ol>
-<li><h3>課程一</h3></li>
-<ol><li>課程一簡介</li></ol>
-<li><h3>課程二</h3></li>
-<ol><li>課程二簡介</li></ol>
-<li><h3>課程三</h3></li>
-<ol><li>課程三簡介</li></ol>
-</ol>-->
-To Be Announced. 
+<ol>
+<li><h3>網頁設計入門實務</h3></li>
+<ol><li>立足於網路時代，我們都見過了形形色色、五花八門的網站，有些令你印象深刻，有些卻令你感到不快而不願駐足；有些系統穩定使你安心，有些卻讓你擔憂是否自己的個人資料被竊取。在這次的營隊，我們將教授基礎的HTML及Javascript，讓你有機會做出一個簡單的網站，秀出你自己。</li></ol>
+<li><h3>3DMax</h3></li>
+<ol><li>看那動畫角色的靈巧、精緻，是否想要創建出一個自己心目中的理想角色呢？透過3DMax，我們將會讓你在營隊中學到基礎的3D建模技術，讓你創造一個屬於你自己的角色！</li></ol>
+<li><h3>數位邏輯設計入門實務</h3></li>
+<ol><li>電腦那只有01的世界，是如何構成人類所見的精彩世界呢？在這次的營隊，我們將會讓你親手玩弄IC、線路，來探究這神奇的世界吧！</li></ol>
+</ol>
 </div>
 
 <div id="activity" title="活動介紹">
@@ -489,7 +488,7 @@ To Be Announced.
 	<ul>
 		<li>網路報名</li>
 		<ol style="list-style-type: decimal; ">
-			<li>填寫<a href="https://docs.google.com/forms/d/1fA9C8c9JaEj7wPU0Vw3uxpy9NxS16b8fgL3w95TzrYI/viewform" target="_blank">線上報名表</a>後下載《報名表暨家長同意書》；亦可不填寫，直接下載《報名表暨家長同意書》。</li>
+			<li>填寫<a href="https://docs.google.com/forms/d/1fA9C8c9JaEj7wPU0Vw3uxpy9NxS16b8fgL3w95TzrYI/viewform" target="_blank" style="color: blue; ">線上報名表</a>後下載《報名表暨家長同意書》；亦可不填寫，直接下載《報名表暨家長同意書》。</li>
 			<li>將家長同意書（若無填寫線上報名表，需將報名資料填妥）填寫完畢後，掃瞄或拍照（需能清晰辨識文字）成電子圖檔。</li>
 			<li>將圖檔email至營隊信箱（<a href="mailto:ndhucsiecamp@gmail.com">ndhu.csie.camp@gmail.com</a>）。</li>
 			<li>等待主辦單位回信給您，進入繳費步驟</li>
